@@ -3,7 +3,9 @@ import styles from './Task.module.css'
 const task =(props) =>{
     return(
         <div className={styles.BuildControl}>
-            <input type="checkbox" onClick={props.checked}></input>
+            <input style={{width: "20px"}} 
+            type="checkbox" 
+            onClick={props.checked}></input>
 
             {props.disabled ? 
             <s><p className={styles.Label}>{props.tName}</p></s>
